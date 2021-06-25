@@ -18,7 +18,15 @@ if [ -e './.git' ]
 	then
 		git add .
 		git commit -m "$Today"
+		if [ -e '~/.git-credentials' ] 
+			then 
+				echo "로그인 정보가 저장되어 있습니다."
+			else
+				git config credential.helper store
+		fi
+
 		echo ==========================================
+		
 		echo ==========================================
 		echo ==========================================
 		echo ==========================================
@@ -28,7 +36,8 @@ if [ -e './.git' ]
 		echo ==========================================
 		echo ==========================================
 		git push
-		git config credential.helper store
+
+	
 
 	else
 		git clone [본인저장소  주소를 대괄호 없이 입력]
