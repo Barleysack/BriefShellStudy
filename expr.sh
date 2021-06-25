@@ -6,8 +6,11 @@ NUM3=`expr ${NUM1} + ${NUM2}`
 NUM4=`expr ${NUM1}+${NUM2}`
 echo ${NUM3}
 echo ${NUM4}
+
+
+
 NUM5=10
-NUM6=2
-NUM7=`echo "sqrt(${NUM5}^${NUM6})"|bc
+NUM6=10
+NUM7=`echo "sqrt(${NUM5} ^ ${NUM6})" | bc`
 echo ${NUM7}
 
