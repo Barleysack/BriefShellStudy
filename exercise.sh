@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #no.1
+cd ~
 
 if [ "1" = "10" ]
 	then
@@ -20,15 +21,13 @@ if [ "BNK" = "bnk" ]
 fi
 
 #no.3
-path='~/code'
-if [ -d "$path" ]
-	then
-		echo "it's directiory"
-elif [ -f "$path" ]; then
-	echo "it's file probably"
 
-else
-	echo "I have no Idea"
+path='./code'
+if [ -d $path ]
+	then
+		echo "it's directory"
+	else 
+		echo "it's not directory"
 
 fi
 
@@ -51,7 +50,7 @@ if [ -w $path3 ]
 fi
 
 #no.6
-path4='~/.vimrc'
+path4='./.vimrc'
 
 if [ -a $path4 ]
 	then
@@ -61,7 +60,7 @@ if [ -a $path4 ]
 fi
 
 #no.7
-path5='/bin/cat' 
+path5='/bin/cat'
 
 if [ -x $path5 ]
 	then
