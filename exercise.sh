@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #no.1
-cd ~
+
 
 if [ "1" = "10" ]
 	then
@@ -22,8 +22,8 @@ fi
 
 #no.3
 
-path='./code'
-if [ -d $path ]
+path='code'
+if [ -d$path ]
 	then
 		echo "it's directory"
 	else 
