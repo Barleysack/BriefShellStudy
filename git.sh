@@ -1,6 +1,6 @@
 #!/bin/bash
 Today=$(date)
-echo "스마트 팩토리 여러분들을 위한 깃 쉘"
+echo "스마트 팩토리 학우 여러분 환영합니다"
 if [ -e '/usr/bin/git' ]
 	then
 		echo "설치된 깃을 발견했습니다."
@@ -9,7 +9,7 @@ if [ -e '/usr/bin/git' ]
 		sudo apt-get install git -y
 		git config --global user.name [깃 아이디를 대괄호 지우고 입력]
 		git config --global user.email [깃 이메일을 대괄호 지우고 입력]
-		git config credential.helper store
+		
 		
 
 fi
