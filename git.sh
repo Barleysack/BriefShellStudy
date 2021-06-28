@@ -21,7 +21,7 @@ fi
 if [ -e './.git' ] 
 	then
 		git add .
-		git commit -m "[$MSG:-$Today]"
+		git commit -m "${MSG:-Today}"
 		if [ -e '~/.git-credentials' ] 
 			then 
 				echo "로그인 정보가 저장되어 있습니다."
@@ -39,6 +39,7 @@ if [ -e './.git' ]
 	else
 		git clone [본인저장소 주소를 대괄호 없이 입력]
 		mv ./git.sh ./[본인 저장소 이름,역시 대괄호 없이]/git.sh
+		
 		echo "저장소를 받아왔습니다. 이제부터 실행하실때마다 커밋&푸시 됩니다."
 		
 		
