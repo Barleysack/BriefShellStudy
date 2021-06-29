@@ -41,7 +41,8 @@ if [ -e './.git' ]
 
 	else
 		git clone [이곳에 저장소 주소 입력,대괄호 지울것]
-		mv ./git.sh ./[저장소 이름 입력, 대괄호 지울것]/git.sh
+		mv *.sh [name of the repository]
+
 		
 		echo "저장소를 받아왔습니다. 이제부터 실행하실때마다 커밋&푸시 됩니다."
 		
