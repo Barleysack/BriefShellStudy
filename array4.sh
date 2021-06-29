@@ -8,7 +8,7 @@ echo ${#array[*]}
 
 
 
-for((i=0; i<5; ++i))
+for((i=0; i<${#array[@]}; ++i))
 do
 	echo ${array[i]}
 
