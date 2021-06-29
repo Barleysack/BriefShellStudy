@@ -22,7 +22,7 @@ fi
 if [ -e './.git' ] 
 	then
 		git add .
-		git commit -m "${MSG:-Today}"
+		git commit -m "${MSG:-$Today}"
 		if [ -e '~/.git-credentials' ] 
 			then 
 				echo "로그인 정보가 저장되어 있습니다."
