@@ -10,8 +10,8 @@ read MSG
 if [ -e '/usr/bin/git' ]
 	then
 		echo "설치된 깃을 발견했습니다."
-		git config --global user.name [깃 아이디를 대괄호 지우고 입력]
-		git config --global user.email [깃 이메일을 대괄호 지우고 입력]
+		git config --global user.name barleysack
+		git config --global user.email hookypooky@naver.com
 	else
 		echo "깃을 설치합니다..."
 		sudo apt-get install git -y
@@ -38,8 +38,8 @@ if [ -e './.git' ]
 		echo "프로세스 완료. 문제가 있으시다면 해당 쉘 파일을 뜯어봅시다."
 
 	else
-		git clone [본인저장소 주소를 대괄호 없이 입력]
-		mv ./git.sh ./[본인 저장소 이름,역시 대괄호 없이]/git.sh
+		git clone https://github.com/barleysack/BriefShellStudy
+		mv ./git.sh ./BriefShellStudy/git.sh
 		
 		echo "저장소를 받아왔습니다. 이제부터 실행하실때마다 커밋&푸시 됩니다."
 		
